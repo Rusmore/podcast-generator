@@ -5,7 +5,7 @@ python3.10 \
 python3-pip \
 git
 
-RUN pip3 install PyYAML
+RUN /bin/sh -c pip3 install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 
